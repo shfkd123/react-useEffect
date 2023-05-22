@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./App.scss";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,13 +19,17 @@ function App() {
 
   console.log("render");
   return (
-    <div>
-      <div>
-        <h1>Count : {count}</h1>
+    <div className="app">
+      <div className="main-inner">
+        main-inner
+        {/* <h1>Count : {count}</h1>
         <button onClick={() => setCount(count + 1)}>UP</button>
-        <button id="consoleButton">print console</button>
+        <button id="consoleButton">print console</button> */}
+        <div className="test-inner">test-inner</div>
+        <div className="test-inner">test-inner</div>
+        <div className="test-inner">test-inner</div>
       </div>
-      <Link to="other">go to other</Link>
+      {/* <Link to="other">go to other</Link> */}
     </div>
   );
 }
